@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Contact Name"
+        android:id="@+id/textContactName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp"
+        android:textColor="@color/system_blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Home"
+        android:id="@+id/textPhoneNumber"
+        android:layout_below="@+id/textAddress"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cell"
+        android:id="@+id/textCellNumber"
+        android:layout_toRightOf="@+id/textPhoneNumber"
+        android:layout_alignBottom="@+id/textPhoneNumber"
+        android:layout_marginLeft="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Address"
+        android:id="@+id/textAddress"
+        android:layout_below="@+id/textContactName"
+        android:layout_marginLeft="15sp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/deleteicon"
+        android:id="@+id/buttonDeleteContact"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/system_white"
+        android:visibility="invisible"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

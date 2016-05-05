@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navbar_backgroud">#ffffff</color>
+    <color name="toolbar_background">#00047a</color>
+    <color name="dataentry_background">#ffffff</color>
+    <color name="settings1_background">#ffffff</color>
+    <color name="settings2_background">#dbd9d9</color>
+    <color name="system_red">#ff0000</color>
+    <color name="system_white">#ffffff</color>
+    <color name="system_blue">#0000ff</color>
+</resources>

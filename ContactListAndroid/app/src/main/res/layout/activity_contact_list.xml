@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gsu.android.contactlistassignment.ContactListActivity">
+
+    <RelativeLayout
+        android:id="@+id/navbar1"
+        android:background="@color/navbar_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonList1"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/imageButtonMap1"
+            android:src="@drawable/contactlisticon"
+            android:background="@color/settings1_background"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonMap1"
+            android:src="@drawable/mapicon"
+            android:layout_alignBaseline="@+id/imageButtonList1"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/settings1_background" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButtonSettings1"
+            android:layout_marginLeft="40dp"
+            android:layout_alignBaseline="@+id/imageButtonMap1"
+            android:src="@drawable/settingsicon"
+            android:layout_toRightOf="@+id/imageButtonMap1"
+            android:background="@color/settings1_background"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/android:list"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/navbar1"
+        android:layout_below="@+id/toolbar1"
+        android:background="@color/settings1_background"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar1"
+        android:background="@color/toolbar_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/buttonDelete"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Contact"
+            android:id="@+id/buttonAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textBatteryLevel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="100%"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/settings2_background"/>
+    </RelativeLayout>
+
+</RelativeLayout>
